@@ -20,7 +20,9 @@ export default function ClientLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" />
+        <meta name="google-adsense-account" content="ca-pub-6639387700552171">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      
         {/* Add inline script to prevent flash of wrong theme */}
         <script
           dangerouslySetInnerHTML={{
