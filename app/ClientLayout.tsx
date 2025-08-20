@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/context/theme-context"
+import { Analytics } from "@vercel/analytics/next"
 import { NetworkStatusProvider } from "@/context/network-status-context"
 import ThemeToggle from "@/components/ui/theme-toggle"
 import NetworkStatusIndicator from "@/components/ui/network-status-indicator"
@@ -111,6 +112,7 @@ export default function ClientLayout({
                 </div>
               </div>
             </footer>
+            <Analytics />
           </NetworkStatusProvider>
         </ThemeProvider>
       </body>
